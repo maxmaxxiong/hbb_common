@@ -98,13 +98,7 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const PUBLIC_RENDEZVOUS_SERVERS: &[&str] = &["rs-ny.rustdesk.com"];
-
-pub const RENDEZVOUS_SERVERS: &str = match option_env!("RENDEZVOUS_SERVERS") {
-    Some(key) if !key.is_empty() => key,
-    _ => PUBLIC_RENDEZVOUS_SERVERS,
-};
-
+pub const RENDEZVOUS_SERVERS: &[&str] = &["desk.445665.xyz"];
 pub const PUBLIC_RS_PUB_KEY: &str = "OeVuKk5nlHiXp+APNn0Y3pC1Iwpwn44JGqrQCsWqmBw=";
 
 pub const RS_PUB_KEY: &str = match option_env!("RS_PUB_KEY") {
